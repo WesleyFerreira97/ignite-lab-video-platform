@@ -5,12 +5,12 @@ import { VideoSection } from '../components/VideoSection'
 
 export function Event() {
     return (
-        <>
+        <div className='flex flex-col min-h-screen'>
             <Header />
-            <main className='flex'>
+            <main className='flex flex-1'>
                 <VideoSection />
                 <Sidebar />
             </main>
-        </>
+        </div>
     )
 }
