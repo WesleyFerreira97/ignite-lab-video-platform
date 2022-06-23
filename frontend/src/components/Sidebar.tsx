@@ -7,7 +7,7 @@ const GET_LESSONS_QUERY = gql`
     lessons(orderBy: availableAt_ASC, stage: PUBLISHED) {
         id
         lessonType
-        publishedAt
+        availableAt
         slug
         title
     }
@@ -18,7 +18,7 @@ interface GetLessonsQueryResponse {
         id: string;
         title: string
         slug: string;
-        availableAt: Date;
+        availableAt: string;
         lessonType: 'live' | 'class';
     }[]
 }
